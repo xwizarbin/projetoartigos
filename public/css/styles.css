@@ -1,0 +1,19 @@
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    background: rgb(129, 210, 248);    
+}
+ 
+  .bg{
+    border-radius: 0;
+    background: rgba(1, 18, 26, 0.8);
+    margin: 0;
+  }
+
+  h1{
+    color: blue;
+    font-style: italic;
+    font-size: 60px;
+    text-align: center;
+}
+   

@@ -11,12 +11,19 @@ Conectar o Mongoose com o banco de dados(blog) que o MongoDB define
 quando você o inicializa pelo console e vamos garantir que qualquer erro 
 de conexão seja impresso no console.
 */
-mongoose.connect('mongodb://localhost/blog', {
+
+
+
+//local mongodb://localhost/blog
+//atlas mongodb+srv://<artigo>:<artigo>@cluster0-apu8k.mongodb.net/<dbname>?retryWrites=true&w=majority
+mongoose.connect('mongodb+srv://artigo:artigo@cluster0-apu8k.mongodb.net/<dbname>?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
 }).then(() => console.log("Conectado com sucesso"))
 .catch(e => console.log(e))
+
+
 
 /*
 O EJS é uma engine de visualização, com ele conseguimos de uma 

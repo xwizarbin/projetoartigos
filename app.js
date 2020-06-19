@@ -57,6 +57,6 @@ app.use('/artigos', rota_artigos)
 
 //Em seguida temos que informar o servidor para escutar uma porta.
 //Abaixo foi chamado o método listen(3000)
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log("server online")
 })
